@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEXT AREA</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8461f502b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class=" w-9/12 mx-auto bg-sky-400">
         
-        <section class=" w-9/12 mx-auto bg-sky-300">
-            <h1 class="text-center text-center text-3xl font-medium">My Text Editor</h1>
-
+        <section class="p-4">
+            <h1 class="text-center text-center text-3xl font-medium mb-3">My Text Editor</h1>
+            <div class="w-9/12 mx-auto bg-sky-200 p-2">
+            <div class="flex justify-between px-4 py-5 ">
+                <div>
+                    <button id="bold" class="mr-3"><i class="fa-solid fa-bold"></i></button>
+                    <button id="bold" class="mr-3"><i class="fa-solid fa-italic"></i></button>
+                    <button id="underline" class=""><i class="fa-solid fa-underline"></i></button>
+                </div>
+                <div class="">
+                    <button id="text-left" class="mr-3"><i class="fa-solid fa-align-left"></i></button>
+                    <button id="text-center" class="mr-3"><i class="fa-solid fa-align-center"></i></button>
+                    <button id="text-right" class="mr-3"><i class="fa-solid fa-align-right"></i></button>
+                    <button id="text-full" class=""><i class="fa-solid fa-align-justify"></i></button>
+                </div>
+                <div>
+                    <input id="number" class="w-3/12 mr-3" type="number">
+                    <button class="font-bold text-1xl mr-3">aA</button>
+                    <input id="color" type="color">
+                </div>
+            </div>
+            <hr>
+            <div class="">
+                <textarea class="w-full justify-center" name="" id="" rows="15" ></textarea>
+            </div>
+        </div>
         </section>
+
     </header>
+<script src="problem3.js"></script>
 </body>
 </html>
